@@ -27,6 +27,11 @@ body{
    margin: 5rem 0.7rem;
    border-radius: 0.5rem;
 }
+.container h1{
+   font-family: var(--font-secondary);
+   font-weight: 700;
+}
+/*-- image --*/
 .gabrielleImg{
    max-width: 100%;
    border-top-left-radius: 0.5rem;
