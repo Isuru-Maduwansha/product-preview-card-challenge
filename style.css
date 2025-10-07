@@ -1,0 +1,38 @@
+/*-- color & font variables setup --*/
+:root{
+   --c-primary: hsl(158, 36%, 37%);
+   --c-secondary: hsl(158, 42%, 18%);
+   --c-Black: hsl(212, 21%, 14%);
+   --c-Grey: hsl(228, 12%, 48%);
+   --c-Cream: hsl(30, 38%, 92%);
+   --c-White: hsl(0, 0%, 100%);
+   --font-base: "Montserrat";
+   --font-secondary: "Fraunces";
+}
+/*-- body --*/
+body{
+   margin: 0;
+   font-family: var(--font-base);
+   background-color: var(--c-Cream);
+   font-size: 14PX;
+}
+/*-- container --*/
+.container{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   background-color: var(--c-White);
+   max-width: 97%;
+   margin: 5rem 0.7rem;
+   border-radius: 0.5rem;
+}
+.gabrielleImg{
+   max-width: 100%;
+   border-top-left-radius: 0.5rem;
+   border-top-right-radius: 0.5rem;
+}
+
+/*-- attribution --*/
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
