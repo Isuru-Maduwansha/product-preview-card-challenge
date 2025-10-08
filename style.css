@@ -102,6 +102,7 @@ body{
   .container {
     flex-direction: row;
     max-width: 600px;
+    margin-top: 10em;
   }
 
   .gabrielleImg {
