@@ -8,14 +8,17 @@
    --c-White: hsl(0, 0%, 100%);
    --font-base: "Montserrat";
    --font-secondary: "Fraunces";
+   font-size: 14px;
 }
+
 /*-- body --*/
 body{
    margin: 0;
    font-family: var(--font-base);
    background-color: var(--c-Cream);
-   font-size: 14PX;
+   line-height: 1.6;
 }
+
 /*-- container --*/
 .container{
    display: flex;
@@ -23,21 +26,94 @@ body{
    align-items: center;
    justify-content: center;
    background-color: var(--c-White);
-   max-width: 97%;
-   margin: 5rem 0.7rem;
-   border-radius: 0.5rem;
+   max-width: 375px;
+   margin: 5em auto;
+   border-radius: 0.6em;
 }
-.container h1{
-   font-family: var(--font-secondary);
-   font-weight: 700;
-}
+
 /*-- image --*/
 .gabrielleImg{
    max-width: 100%;
-   border-top-left-radius: 0.5rem;
-   border-top-right-radius: 0.5rem;
+   border-top-left-radius: 0.6em;
+   border-top-right-radius: 0.6em;
+}
+
+/*-- discription --*/
+.perfumeName{
+   padding: 2em 3em;
+}
+.perfumeName p{
+   font-size: 1rem;
+   color: var(--c-Grey);
+   font-weight: 500;
+}
+.perfumeName h1{
+   font-family: var(--font-secondary);
+   font-weight: 700;
+   color: var(--c-Black);
+   line-height: 1;
+}
+.perfumeName h2{
+   font-size: 1rem;
+   color: var(--c-Grey);
+   font-weight: 500;
+   margin: 0 0 1.5em 0;
+}
+
+/*-- price & button --*/
+.price{
+   display: flex;
+   flex-direction: row;
+   margin-bottom: 1.5em;
+}
+.price span{
+   font-family: var(--font-secondary);
+   font-size: 2.5rem;
+   font-weight: 700;
+   color: var(--c-primary);
+   margin-right: 0.7em;
+}
+.price p{
+   text-decoration-line: line-through;
+}
+.cartButton button{
+   color: var(--c-White);
+   background-color: var(--c-primary);
+   width: 100%;
+   padding: 1em;
+   border-style: none;
+   border-radius: 0.5em;
+   font-weight: 700;
+   margin-bottom: 1em;
+}
+.cartButton span{
+   margin-left: .5em;
+}
+.cartButton button:hover{
+   background-color: var(--c-secondary);
 }
 
 /*-- attribution --*/
-.attribution { font-size: 11px; text-align: center; }
+.attribution { font-size: 12px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
+
+/*-- media query --*/
+@media (min-width: 768px) {
+  .container {
+    flex-direction: row;
+    max-width: 600px;
+  }
+
+  .gabrielleImg {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 0.6em;
+  }
+
+  .perfumeName {
+    width: 100%;
+    padding: 2em;
+  }
+}
